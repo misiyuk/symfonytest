@@ -1,0 +1,104 @@
+{
+    "psr/cache": {
+        "version": "1.0.x-dev"
+    },
+    "psr/container": {
+        "version": "1.0.x-dev"
+    },
+    "psr/log": {
+        "version": "1.1.x-dev"
+    },
+    "psr/simple-cache": {
+        "version": "1.0.x-dev"
+    },
+    "symfony/cache": {
+        "version": "4.3-dev"
+    },
+    "symfony/config": {
+        "version": "4.3-dev"
+    },
+    "symfony/console": {
+        "version": "3.3",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "master",
+            "version": "3.3",
+            "ref": "f3a28efb32f20b8740fd763651cabd780bce43da"
+        }
+    },
+    "symfony/contracts": {
+        "version": "1.0-dev"
+    },
+    "symfony/debug": {
+        "version": "4.3-dev"
+    },
+    "symfony/dependency-injection": {
+        "version": "4.3-dev"
+    },
+    "symfony/dotenv": {
+        "version": "4.3-dev"
+    },
+    "symfony/event-dispatcher": {
+        "version": "4.3-dev"
+    },
+    "symfony/filesystem": {
+        "version": "4.3-dev"
+    },
+    "symfony/finder": {
+        "version": "4.3-dev"
+    },
+    "symfony/flex": {
+        "version": "1.0",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "master",
+            "version": "1.0",
+            "ref": "5f8a51c0fad684396f6b6c0fd770e043439cb632"
+        }
+    },
+    "symfony/framework-bundle": {
+        "version": "4.2",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "master",
+            "version": "4.2",
+            "ref": "f0e22c9457f6745bee80ade92c0ec2946bec9e2d"
+        }
+    },
+    "symfony/http-foundation": {
+        "version": "4.3-dev"
+    },
+    "symfony/http-kernel": {
+        "version": "4.3-dev"
+    },
+    "symfony/polyfill-mbstring": {
+        "version": "v1.10.0"
+    },
+    "symfony/process": {
+        "version": "4.3-dev"
+    },
+    "symfony/routing": {
+        "version": "4.2",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "master",
+            "version": "4.2",
+            "ref": "5374e24d508ba8fd6ba9eb15170255fdb778316a"
+        }
+    },
+    "symfony/var-exporter": {
+        "version": "4.3-dev"
+    },
+    "symfony/web-server-bundle": {
+        "version": "3.3",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "master",
+            "version": "3.3",
+            "ref": "dae9b39fd6717970be7601101ce5aa960bf53d9a"
+        }
+    },
+    "symfony/yaml": {
+        "version": "4.3-dev"
+    }
+}
