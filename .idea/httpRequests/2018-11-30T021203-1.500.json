@@ -1,0 +1,170 @@
+{
+  "error": {
+    "code": 500,
+    "message": "Internal Server Error",
+    "exception": [
+      {
+        "message": "Cannot autowire argument $container of \"App\\Controller\\ApiController::generateAction()\": it references class \"Symfony\\Component\\DependencyInjection\\Container\" but no such service exists. Try changing the type-hint to one of its parents: interface \"Psr\\Container\\ContainerInterface\", or interface \"Symfony\\Component\\DependencyInjection\\ContainerInterface\".",
+        "class": "Symfony\\Component\\DependencyInjection\\Exception\\RuntimeException",
+        "trace": [
+          {
+            "namespace": "",
+            "short_class": "",
+            "class": "",
+            "type": "",
+            "function": "",
+            "file": "\/var\/www\/vendor\/symfony\/dependency-injection\/Container.php",
+            "line": 427,
+            "args": []
+          },
+          {
+            "namespace": "Symfony\\Component\\DependencyInjection",
+            "short_class": "Container",
+            "class": "Symfony\\Component\\DependencyInjection\\Container",
+            "type": "->",
+            "function": "getService",
+            "file": "\/var\/www\/vendor\/symfony\/dependency-injection\/Argument\/ServiceLocator.php",
+            "line": 38,
+            "args": [
+              [
+                "string",
+                "privates"
+              ],
+              [
+                "string",
+                ".errored..service_locator.zHpmshA.Symfony\\Component\\DependencyInjection\\Container"
+              ],
+              [
+                "null",
+                null
+              ],
+              [
+                "string",
+                "Cannot autowire service \".service_locator.zHpmshA\": it references class \"Symfony\\Component\\DependencyInjection\\Container\" but no such service exists. Try changing the type-hint to one of its parents: interface \"Psr\\Container\\ContainerInterface\", or interface \"Symfony\\Component\\DependencyInjection\\ContainerInterface\"."
+              ]
+            ]
+          },
+          {
+            "namespace": "Symfony\\Component\\DependencyInjection\\Argument",
+            "short_class": "ServiceLocator",
+            "class": "Symfony\\Component\\DependencyInjection\\Argument\\ServiceLocator",
+            "type": "->",
+            "function": "get",
+            "file": "\/var\/www\/vendor\/symfony\/http-kernel\/Controller\/ArgumentResolver\/ServiceValueResolver.php",
+            "line": 77,
+            "args": [
+              [
+                "string",
+                "container"
+              ]
+            ]
+          },
+          {
+            "namespace": "Symfony\\Component\\HttpKernel\\Controller\\ArgumentResolver",
+            "short_class": "ServiceValueResolver",
+            "class": "Symfony\\Component\\HttpKernel\\Controller\\ArgumentResolver\\ServiceValueResolver",
+            "type": "->",
+            "function": "resolve",
+            "file": "\/var\/www\/vendor\/symfony\/http-kernel\/Controller\/ArgumentResolver.php",
+            "line": 62,
+            "args": [
+              [
+                "object",
+                "Symfony\\Component\\HttpFoundation\\Request"
+              ],
+              [
+                "object",
+                "Symfony\\Component\\HttpKernel\\ControllerMetadata\\ArgumentMetadata"
+              ]
+            ]
+          },
+          {
+            "namespace": "Symfony\\Component\\HttpKernel\\Controller",
+            "short_class": "ArgumentResolver",
+            "class": "Symfony\\Component\\HttpKernel\\Controller\\ArgumentResolver",
+            "type": "->",
+            "function": "getArguments",
+            "file": "\/var\/www\/vendor\/symfony\/http-kernel\/HttpKernel.php",
+            "line": 142,
+            "args": [
+              [
+                "object",
+                "Symfony\\Component\\HttpFoundation\\Request"
+              ],
+              [
+                "array",
+                [
+                  [
+                    "object",
+                    "App\\Controller\\ApiController"
+                  ],
+                  [
+                    "string",
+                    "generateAction"
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "namespace": "Symfony\\Component\\HttpKernel",
+            "short_class": "HttpKernel",
+            "class": "Symfony\\Component\\HttpKernel\\HttpKernel",
+            "type": "->",
+            "function": "handleRaw",
+            "file": "\/var\/www\/vendor\/symfony\/http-kernel\/HttpKernel.php",
+            "line": 67,
+            "args": [
+              [
+                "object",
+                "Symfony\\Component\\HttpFoundation\\Request"
+              ],
+              [
+                "integer",
+                1
+              ]
+            ]
+          },
+          {
+            "namespace": "Symfony\\Component\\HttpKernel",
+            "short_class": "HttpKernel",
+            "class": "Symfony\\Component\\HttpKernel\\HttpKernel",
+            "type": "->",
+            "function": "handle",
+            "file": "\/var\/www\/vendor\/symfony\/http-kernel\/Kernel.php",
+            "line": 198,
+            "args": [
+              [
+                "object",
+                "Symfony\\Component\\HttpFoundation\\Request"
+              ],
+              [
+                "integer",
+                1
+              ],
+              [
+                "boolean",
+                true
+              ]
+            ]
+          },
+          {
+            "namespace": "Symfony\\Component\\HttpKernel",
+            "short_class": "Kernel",
+            "class": "Symfony\\Component\\HttpKernel\\Kernel",
+            "type": "->",
+            "function": "handle",
+            "file": "\/var\/www\/public\/index.php",
+            "line": 25,
+            "args": [
+              [
+                "object",
+                "Symfony\\Component\\HttpFoundation\\Request"
+              ]
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

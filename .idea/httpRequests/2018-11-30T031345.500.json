@@ -1,0 +1,672 @@
+{
+  "error": {
+    "code": 500,
+    "message": "Internal Server Error",
+    "exception": [
+      {
+        "message": "An exception occurred while executing 'SELECT t0.id AS id_1, t0.code AS code_2, t0.date AS date_3 FROM table t0 WHERE t0.code = ? LIMIT 1' with params [\"AE32DF11CF\"]:\n\nSQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'table t0 WHERE t0.code = 'AE32DF11CF' LIMIT 1' at line 1",
+        "class": "Doctrine\\DBAL\\Exception\\SyntaxErrorException",
+        "trace": [
+          {
+            "namespace": "",
+            "short_class": "",
+            "class": "",
+            "type": "",
+            "function": "",
+            "file": "\/var\/www\/vendor\/doctrine\/dbal\/lib\/Doctrine\/DBAL\/Driver\/AbstractMySQLDriver.php",
+            "line": 79,
+            "args": []
+          },
+          {
+            "namespace": "Doctrine\\DBAL\\Driver",
+            "short_class": "AbstractMySQLDriver",
+            "class": "Doctrine\\DBAL\\Driver\\AbstractMySQLDriver",
+            "type": "->",
+            "function": "convertException",
+            "file": "\/var\/www\/vendor\/doctrine\/dbal\/lib\/Doctrine\/DBAL\/DBALException.php",
+            "line": 169,
+            "args": [
+              [
+                "string",
+                "An exception occurred while executing 'SELECT t0.id AS id_1, t0.code AS code_2, t0.date AS date_3 FROM table t0 WHERE t0.code = ? LIMIT 1' with params [\"AE32DF11CF\"]:\n\nSQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'table t0 WHERE t0.code = 'AE32DF11CF' LIMIT 1' at line 1"
+              ],
+              [
+                "object",
+                "Doctrine\\DBAL\\Driver\\PDOException"
+              ]
+            ]
+          },
+          {
+            "namespace": "Doctrine\\DBAL",
+            "short_class": "DBALException",
+            "class": "Doctrine\\DBAL\\DBALException",
+            "type": "::",
+            "function": "wrapException",
+            "file": "\/var\/www\/vendor\/doctrine\/dbal\/lib\/Doctrine\/DBAL\/DBALException.php",
+            "line": 145,
+            "args": [
+              [
+                "object",
+                "Doctrine\\DBAL\\Driver\\PDOMySql\\Driver"
+              ],
+              [
+                "object",
+                "Doctrine\\DBAL\\Driver\\PDOException"
+              ],
+              [
+                "string",
+                "An exception occurred while executing 'SELECT t0.id AS id_1, t0.code AS code_2, t0.date AS date_3 FROM table t0 WHERE t0.code = ? LIMIT 1' with params [\"AE32DF11CF\"]:\n\nSQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'table t0 WHERE t0.code = 'AE32DF11CF' LIMIT 1' at line 1"
+              ]
+            ]
+          },
+          {
+            "namespace": "Doctrine\\DBAL",
+            "short_class": "DBALException",
+            "class": "Doctrine\\DBAL\\DBALException",
+            "type": "::",
+            "function": "driverExceptionDuringQuery",
+            "file": "\/var\/www\/vendor\/doctrine\/dbal\/lib\/Doctrine\/DBAL\/Connection.php",
+            "line": 911,
+            "args": [
+              [
+                "object",
+                "Doctrine\\DBAL\\Driver\\PDOMySql\\Driver"
+              ],
+              [
+                "object",
+                "Doctrine\\DBAL\\Driver\\PDOException"
+              ],
+              [
+                "string",
+                "SELECT t0.id AS id_1, t0.code AS code_2, t0.date AS date_3 FROM table t0 WHERE t0.code = ? LIMIT 1"
+              ],
+              [
+                "array",
+                {
+                  "1": [
+                    "string",
+                    "AE32DF11CF"
+                  ]
+                }
+              ]
+            ]
+          },
+          {
+            "namespace": "Doctrine\\DBAL",
+            "short_class": "Connection",
+            "class": "Doctrine\\DBAL\\Connection",
+            "type": "->",
+            "function": "executeQuery",
+            "file": "\/var\/www\/vendor\/doctrine\/orm\/lib\/Doctrine\/ORM\/Persisters\/Entity\/BasicEntityPersister.php",
+            "line": 733,
+            "args": [
+              [
+                "string",
+                "SELECT t0.id AS id_1, t0.code AS code_2, t0.date AS date_3 FROM table t0 WHERE t0.code = ? LIMIT 1"
+              ],
+              [
+                "array",
+                [
+                  [
+                    "string",
+                    "AE32DF11CF"
+                  ]
+                ]
+              ],
+              [
+                "array",
+                [
+                  [
+                    "string",
+                    "string"
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "namespace": "Doctrine\\ORM\\Persisters\\Entity",
+            "short_class": "BasicEntityPersister",
+            "class": "Doctrine\\ORM\\Persisters\\Entity\\BasicEntityPersister",
+            "type": "->",
+            "function": "load",
+            "file": "\/var\/www\/vendor\/doctrine\/orm\/lib\/Doctrine\/ORM\/EntityRepository.php",
+            "line": 196,
+            "args": [
+              [
+                "array",
+                {
+                  "code": [
+                    "string",
+                    "AE32DF11CF"
+                  ]
+                }
+              ],
+              [
+                "null",
+                null
+              ],
+              [
+                "null",
+                null
+              ],
+              [
+                "array",
+                []
+              ],
+              [
+                "null",
+                null
+              ],
+              [
+                "integer",
+                1
+              ],
+              [
+                "null",
+                null
+              ]
+            ]
+          },
+          {
+            "namespace": "Doctrine\\ORM",
+            "short_class": "EntityRepository",
+            "class": "Doctrine\\ORM\\EntityRepository",
+            "type": "->",
+            "function": "findOneBy",
+            "file": "\/var\/www\/src\/Controller\/ApiController.php",
+            "line": 45,
+            "args": [
+              [
+                "array",
+                {
+                  "code": [
+                    "string",
+                    "AE32DF11CF"
+                  ]
+                }
+              ]
+            ]
+          },
+          {
+            "namespace": "App\\Controller",
+            "short_class": "ApiController",
+            "class": "App\\Controller\\ApiController",
+            "type": "->",
+            "function": "generateAction",
+            "file": "\/var\/www\/vendor\/symfony\/http-kernel\/HttpKernel.php",
+            "line": 150,
+            "args": [
+              [
+                "object",
+                "FOS\\RestBundle\\Request\\ParamFetcher"
+              ]
+            ]
+          },
+          {
+            "namespace": "Symfony\\Component\\HttpKernel",
+            "short_class": "HttpKernel",
+            "class": "Symfony\\Component\\HttpKernel\\HttpKernel",
+            "type": "->",
+            "function": "handleRaw",
+            "file": "\/var\/www\/vendor\/symfony\/http-kernel\/HttpKernel.php",
+            "line": 67,
+            "args": [
+              [
+                "object",
+                "Symfony\\Component\\HttpFoundation\\Request"
+              ],
+              [
+                "integer",
+                1
+              ]
+            ]
+          },
+          {
+            "namespace": "Symfony\\Component\\HttpKernel",
+            "short_class": "HttpKernel",
+            "class": "Symfony\\Component\\HttpKernel\\HttpKernel",
+            "type": "->",
+            "function": "handle",
+            "file": "\/var\/www\/vendor\/symfony\/http-kernel\/Kernel.php",
+            "line": 198,
+            "args": [
+              [
+                "object",
+                "Symfony\\Component\\HttpFoundation\\Request"
+              ],
+              [
+                "integer",
+                1
+              ],
+              [
+                "boolean",
+                true
+              ]
+            ]
+          },
+          {
+            "namespace": "Symfony\\Component\\HttpKernel",
+            "short_class": "Kernel",
+            "class": "Symfony\\Component\\HttpKernel\\Kernel",
+            "type": "->",
+            "function": "handle",
+            "file": "\/var\/www\/public\/index.php",
+            "line": 25,
+            "args": [
+              [
+                "object",
+                "Symfony\\Component\\HttpFoundation\\Request"
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "message": "SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'table t0 WHERE t0.code = 'AE32DF11CF' LIMIT 1' at line 1",
+        "class": "Doctrine\\DBAL\\Driver\\PDOException",
+        "trace": [
+          {
+            "namespace": "",
+            "short_class": "",
+            "class": "",
+            "type": "",
+            "function": "",
+            "file": "\/var\/www\/vendor\/doctrine\/dbal\/lib\/Doctrine\/DBAL\/Driver\/PDOStatement.php",
+            "line": 119,
+            "args": []
+          },
+          {
+            "namespace": "Doctrine\\DBAL\\Driver",
+            "short_class": "PDOStatement",
+            "class": "Doctrine\\DBAL\\Driver\\PDOStatement",
+            "type": "->",
+            "function": "execute",
+            "file": "\/var\/www\/vendor\/doctrine\/dbal\/lib\/Doctrine\/DBAL\/Connection.php",
+            "line": 903,
+            "args": []
+          },
+          {
+            "namespace": "Doctrine\\DBAL",
+            "short_class": "Connection",
+            "class": "Doctrine\\DBAL\\Connection",
+            "type": "->",
+            "function": "executeQuery",
+            "file": "\/var\/www\/vendor\/doctrine\/orm\/lib\/Doctrine\/ORM\/Persisters\/Entity\/BasicEntityPersister.php",
+            "line": 733,
+            "args": [
+              [
+                "string",
+                "SELECT t0.id AS id_1, t0.code AS code_2, t0.date AS date_3 FROM table t0 WHERE t0.code = ? LIMIT 1"
+              ],
+              [
+                "array",
+                [
+                  [
+                    "string",
+                    "AE32DF11CF"
+                  ]
+                ]
+              ],
+              [
+                "array",
+                [
+                  [
+                    "string",
+                    "string"
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "namespace": "Doctrine\\ORM\\Persisters\\Entity",
+            "short_class": "BasicEntityPersister",
+            "class": "Doctrine\\ORM\\Persisters\\Entity\\BasicEntityPersister",
+            "type": "->",
+            "function": "load",
+            "file": "\/var\/www\/vendor\/doctrine\/orm\/lib\/Doctrine\/ORM\/EntityRepository.php",
+            "line": 196,
+            "args": [
+              [
+                "array",
+                {
+                  "code": [
+                    "string",
+                    "AE32DF11CF"
+                  ]
+                }
+              ],
+              [
+                "null",
+                null
+              ],
+              [
+                "null",
+                null
+              ],
+              [
+                "array",
+                []
+              ],
+              [
+                "null",
+                null
+              ],
+              [
+                "integer",
+                1
+              ],
+              [
+                "null",
+                null
+              ]
+            ]
+          },
+          {
+            "namespace": "Doctrine\\ORM",
+            "short_class": "EntityRepository",
+            "class": "Doctrine\\ORM\\EntityRepository",
+            "type": "->",
+            "function": "findOneBy",
+            "file": "\/var\/www\/src\/Controller\/ApiController.php",
+            "line": 45,
+            "args": [
+              [
+                "array",
+                {
+                  "code": [
+                    "string",
+                    "AE32DF11CF"
+                  ]
+                }
+              ]
+            ]
+          },
+          {
+            "namespace": "App\\Controller",
+            "short_class": "ApiController",
+            "class": "App\\Controller\\ApiController",
+            "type": "->",
+            "function": "generateAction",
+            "file": "\/var\/www\/vendor\/symfony\/http-kernel\/HttpKernel.php",
+            "line": 150,
+            "args": [
+              [
+                "object",
+                "FOS\\RestBundle\\Request\\ParamFetcher"
+              ]
+            ]
+          },
+          {
+            "namespace": "Symfony\\Component\\HttpKernel",
+            "short_class": "HttpKernel",
+            "class": "Symfony\\Component\\HttpKernel\\HttpKernel",
+            "type": "->",
+            "function": "handleRaw",
+            "file": "\/var\/www\/vendor\/symfony\/http-kernel\/HttpKernel.php",
+            "line": 67,
+            "args": [
+              [
+                "object",
+                "Symfony\\Component\\HttpFoundation\\Request"
+              ],
+              [
+                "integer",
+                1
+              ]
+            ]
+          },
+          {
+            "namespace": "Symfony\\Component\\HttpKernel",
+            "short_class": "HttpKernel",
+            "class": "Symfony\\Component\\HttpKernel\\HttpKernel",
+            "type": "->",
+            "function": "handle",
+            "file": "\/var\/www\/vendor\/symfony\/http-kernel\/Kernel.php",
+            "line": 198,
+            "args": [
+              [
+                "object",
+                "Symfony\\Component\\HttpFoundation\\Request"
+              ],
+              [
+                "integer",
+                1
+              ],
+              [
+                "boolean",
+                true
+              ]
+            ]
+          },
+          {
+            "namespace": "Symfony\\Component\\HttpKernel",
+            "short_class": "Kernel",
+            "class": "Symfony\\Component\\HttpKernel\\Kernel",
+            "type": "->",
+            "function": "handle",
+            "file": "\/var\/www\/public\/index.php",
+            "line": 25,
+            "args": [
+              [
+                "object",
+                "Symfony\\Component\\HttpFoundation\\Request"
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "message": "SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'table t0 WHERE t0.code = 'AE32DF11CF' LIMIT 1' at line 1",
+        "class": "PDOException",
+        "trace": [
+          {
+            "namespace": "",
+            "short_class": "",
+            "class": "",
+            "type": "",
+            "function": "",
+            "file": "\/var\/www\/vendor\/doctrine\/dbal\/lib\/Doctrine\/DBAL\/Driver\/PDOStatement.php",
+            "line": 117,
+            "args": []
+          },
+          {
+            "namespace": "",
+            "short_class": "PDOStatement",
+            "class": "PDOStatement",
+            "type": "->",
+            "function": "execute",
+            "file": "\/var\/www\/vendor\/doctrine\/dbal\/lib\/Doctrine\/DBAL\/Driver\/PDOStatement.php",
+            "line": 117,
+            "args": [
+              [
+                "null",
+                null
+              ]
+            ]
+          },
+          {
+            "namespace": "Doctrine\\DBAL\\Driver",
+            "short_class": "PDOStatement",
+            "class": "Doctrine\\DBAL\\Driver\\PDOStatement",
+            "type": "->",
+            "function": "execute",
+            "file": "\/var\/www\/vendor\/doctrine\/dbal\/lib\/Doctrine\/DBAL\/Connection.php",
+            "line": 903,
+            "args": []
+          },
+          {
+            "namespace": "Doctrine\\DBAL",
+            "short_class": "Connection",
+            "class": "Doctrine\\DBAL\\Connection",
+            "type": "->",
+            "function": "executeQuery",
+            "file": "\/var\/www\/vendor\/doctrine\/orm\/lib\/Doctrine\/ORM\/Persisters\/Entity\/BasicEntityPersister.php",
+            "line": 733,
+            "args": [
+              [
+                "string",
+                "SELECT t0.id AS id_1, t0.code AS code_2, t0.date AS date_3 FROM table t0 WHERE t0.code = ? LIMIT 1"
+              ],
+              [
+                "array",
+                [
+                  [
+                    "string",
+                    "AE32DF11CF"
+                  ]
+                ]
+              ],
+              [
+                "array",
+                [
+                  [
+                    "string",
+                    "string"
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "namespace": "Doctrine\\ORM\\Persisters\\Entity",
+            "short_class": "BasicEntityPersister",
+            "class": "Doctrine\\ORM\\Persisters\\Entity\\BasicEntityPersister",
+            "type": "->",
+            "function": "load",
+            "file": "\/var\/www\/vendor\/doctrine\/orm\/lib\/Doctrine\/ORM\/EntityRepository.php",
+            "line": 196,
+            "args": [
+              [
+                "array",
+                {
+                  "code": [
+                    "string",
+                    "AE32DF11CF"
+                  ]
+                }
+              ],
+              [
+                "null",
+                null
+              ],
+              [
+                "null",
+                null
+              ],
+              [
+                "array",
+                []
+              ],
+              [
+                "null",
+                null
+              ],
+              [
+                "integer",
+                1
+              ],
+              [
+                "null",
+                null
+              ]
+            ]
+          },
+          {
+            "namespace": "Doctrine\\ORM",
+            "short_class": "EntityRepository",
+            "class": "Doctrine\\ORM\\EntityRepository",
+            "type": "->",
+            "function": "findOneBy",
+            "file": "\/var\/www\/src\/Controller\/ApiController.php",
+            "line": 45,
+            "args": [
+              [
+                "array",
+                {
+                  "code": [
+                    "string",
+                    "AE32DF11CF"
+                  ]
+                }
+              ]
+            ]
+          },
+          {
+            "namespace": "App\\Controller",
+            "short_class": "ApiController",
+            "class": "App\\Controller\\ApiController",
+            "type": "->",
+            "function": "generateAction",
+            "file": "\/var\/www\/vendor\/symfony\/http-kernel\/HttpKernel.php",
+            "line": 150,
+            "args": [
+              [
+                "object",
+                "FOS\\RestBundle\\Request\\ParamFetcher"
+              ]
+            ]
+          },
+          {
+            "namespace": "Symfony\\Component\\HttpKernel",
+            "short_class": "HttpKernel",
+            "class": "Symfony\\Component\\HttpKernel\\HttpKernel",
+            "type": "->",
+            "function": "handleRaw",
+            "file": "\/var\/www\/vendor\/symfony\/http-kernel\/HttpKernel.php",
+            "line": 67,
+            "args": [
+              [
+                "object",
+                "Symfony\\Component\\HttpFoundation\\Request"
+              ],
+              [
+                "integer",
+                1
+              ]
+            ]
+          },
+          {
+            "namespace": "Symfony\\Component\\HttpKernel",
+            "short_class": "HttpKernel",
+            "class": "Symfony\\Component\\HttpKernel\\HttpKernel",
+            "type": "->",
+            "function": "handle",
+            "file": "\/var\/www\/vendor\/symfony\/http-kernel\/Kernel.php",
+            "line": 198,
+            "args": [
+              [
+                "object",
+                "Symfony\\Component\\HttpFoundation\\Request"
+              ],
+              [
+                "integer",
+                1
+              ],
+              [
+                "boolean",
+                true
+              ]
+            ]
+          },
+          {
+            "namespace": "Symfony\\Component\\HttpKernel",
+            "short_class": "Kernel",
+            "class": "Symfony\\Component\\HttpKernel\\Kernel",
+            "type": "->",
+            "function": "handle",
+            "file": "\/var\/www\/public\/index.php",
+            "line": 25,
+            "args": [
+              [
+                "object",
+                "Symfony\\Component\\HttpFoundation\\Request"
+              ]
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

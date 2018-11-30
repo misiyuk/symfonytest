@@ -1,0 +1,96 @@
+{
+  "error": {
+    "code": 500,
+    "message": "Internal Server Error",
+    "exception": [
+      {
+        "message": "Notice: Undefined variable: code",
+        "class": "ErrorException",
+        "trace": [
+          {
+            "namespace": "",
+            "short_class": "",
+            "class": "",
+            "type": "",
+            "function": "",
+            "file": "\/var\/www\/src\/Controller\/ApiController.php",
+            "line": 58,
+            "args": []
+          },
+          {
+            "namespace": "App\\Controller",
+            "short_class": "ApiController",
+            "class": "App\\Controller\\ApiController",
+            "type": "->",
+            "function": "generateAction",
+            "file": "\/var\/www\/vendor\/symfony\/http-kernel\/HttpKernel.php",
+            "line": 150,
+            "args": [
+              [
+                "object",
+                "FOS\\RestBundle\\Request\\ParamFetcher"
+              ]
+            ]
+          },
+          {
+            "namespace": "Symfony\\Component\\HttpKernel",
+            "short_class": "HttpKernel",
+            "class": "Symfony\\Component\\HttpKernel\\HttpKernel",
+            "type": "->",
+            "function": "handleRaw",
+            "file": "\/var\/www\/vendor\/symfony\/http-kernel\/HttpKernel.php",
+            "line": 67,
+            "args": [
+              [
+                "object",
+                "Symfony\\Component\\HttpFoundation\\Request"
+              ],
+              [
+                "integer",
+                1
+              ]
+            ]
+          },
+          {
+            "namespace": "Symfony\\Component\\HttpKernel",
+            "short_class": "HttpKernel",
+            "class": "Symfony\\Component\\HttpKernel\\HttpKernel",
+            "type": "->",
+            "function": "handle",
+            "file": "\/var\/www\/vendor\/symfony\/http-kernel\/Kernel.php",
+            "line": 198,
+            "args": [
+              [
+                "object",
+                "Symfony\\Component\\HttpFoundation\\Request"
+              ],
+              [
+                "integer",
+                1
+              ],
+              [
+                "boolean",
+                true
+              ]
+            ]
+          },
+          {
+            "namespace": "Symfony\\Component\\HttpKernel",
+            "short_class": "Kernel",
+            "class": "Symfony\\Component\\HttpKernel\\Kernel",
+            "type": "->",
+            "function": "handle",
+            "file": "\/var\/www\/public\/index.php",
+            "line": 25,
+            "args": [
+              [
+                "object",
+                "Symfony\\Component\\HttpFoundation\\Request"
+              ]
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

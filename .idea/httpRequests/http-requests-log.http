@@ -1,0 +1,394 @@
+POST http://test.local/generate?export=xls
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-11-30T021652.200.txt
+
+###
+
+POST http://test.local/generate?nb=10
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-11-30T021538.200.json
+
+###
+
+GET http://test.local/generate?nb=10
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-11-30T021523.200.json
+
+###
+
+POST http://test.local/generate?export=xls
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-11-30T021244.200.txt
+
+###
+
+POST http://test.local/generate?export=xls
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-11-30T021231.200.json
+
+###
+
+POST http://test.local/generate?export=xls
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-11-30T021203-1.500.json
+
+###
+
+POST http://test.local/generate?export=xls
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-11-30T021203.500.json
+
+###
+
+POST http://test.local/generate?export=xls
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-11-30T050818.500.json
+
+###
+
+POST http://test.local/generate?export=xls
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-11-30T050817.500.json
+
+###
+
+POST http://test.local/generate?export=xls
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-11-30T050750.500.json
+
+###
+
+POST http://test.local/generate?export=xls
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-11-30T050501.500.json
+
+###
+
+GET http://test.local/2F24BBDasEE2
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-11-30T042458.404.json
+
+###
+
+GET http://test.local/2F24BBDasEE2
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-11-30T041814.404.json
+
+###
+
+GET http://test.local/2F24BBDEE2
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-11-30T035029.200.json
+
+###
+
+POST http://test.local/generate?nb=10
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-11-30T035000.200.json
+
+###
+
+POST http://test.local/generate?nb=10
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-11-30T034237.200.json
+
+###
+
+POST http://test.local/generate?nb=10
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-11-30T033923.200.json
+
+###
+
+POST http://test.local/generate?nb=10
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-11-30T033336.200.json
+
+###
+
+POST http://test.local/generate?nb=10
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-11-30T033241.200.json
+
+###
+
+POST http://test.local/generate
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-11-30T033136.200.json
+
+###
+
+POST http://test.local/generate
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-11-30T033113.500.json
+
+###
+
+POST http://test.local/generate
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+POST http://test.local/asasd
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-11-30T033020.404.json
+
+###
+
+POST http://test.local/asasd
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-11-30T033018.404.json
+
+###
+
+POST http://test.local/generate
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+POST http://test.local/asasd
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-11-30T033015.404.json
+
+###
+
+POST http://test.local/generate
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+POST http://test.local/generate
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-11-30T031345.500.json
+
+###
+
+POST http://test.local/generate
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-11-30T031156.200.json
+
+###
+
+POST http://test.local/generate
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-11-30T031155.200.json
+
+###
+
+POST http://test.local/generate
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-11-30T031154.200.json
+
+###
+
+POST http://test.local/generate
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-11-30T031153.200.json
+
+###
+
+POST http://test.local/generate
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-11-30T031152.200.json
+
+###
+
+POST http://test.local/generate
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-11-30T031150.200.json
+
+###
+
+POST http://test.local/generate
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-11-30T031148.200.json
+
+###
+
+POST http://test.local/generate
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-11-30T031147.200.json
+
+###
+
+POST http://test.local/generate
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-11-30T031146.200.json
+
+###
+
+POST http://test.local/generate
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-11-30T031145.200.json
+
+###
+
+POST http://test.local/generate
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-11-30T031143.200.json
+
+###
+
+POST http://test.local/generate
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-11-30T031142.200.json
+
+###
+
+POST http://test.local/generate
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-11-30T031137.200.json
+
+###
+
+POST http://test.local/generate
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-11-30T031126.200.json
+
+###
+
+POST http://test.local/generate
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-11-30T030312.200.json
+
+###
+
+POST http://test.local/generate
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-11-30T030305.200.json
+
+###
+
+POST http://test.local/generate
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-11-30T025935.200.json
+
+###
+
+POST http://test.local/generate
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-11-30T025909.200.json
+
+###
+
+POST http://test.local/generate
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-11-30T025747.500.json
+
+###
+
+POST http://test.local/generate
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-11-30T025737.500.json
+
+###
+
+POST http://test.local/generate
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-11-30T025727.500.json
+
+###
+
+POST http://test.local/generate
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-11-30T025712.500.json
+
+###
+
